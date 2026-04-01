@@ -6,7 +6,7 @@
 
 ## Funzionalità principali
 
-SimpleNotes offre un set completo di strumenti organizzati in un'interfaccia pulita:
+SimpleNotes offre un set completo di strumenti organizzati in un'interfaccia pulita composta da quattro menu:
 
 ### File
 * **Nuovo / Nuova finestra:** Gestisci più documenti contemporaneamente.
