@@ -33,7 +33,6 @@ SimpleNotes offre un set completo di strumenti organizzati in un'interfaccia pul
 ## Requisiti
 
 * **Python 3.x**
-* **Tkinter**, **Datetime** e **Webbrowser** (librerie standard, ovvero preinstallate con Python)
 
 ---
 
