@@ -1,4 +1,4 @@
-# SimpleNotes.py
+# SimpleNotes.pyw
 
 **SimpleNotes** è un editor di testo semplice, leggero ed intuitivo sviluppato con il linguaggio **Python** e le librerie **Tkinter**, **Datetime** e **Webbrowser**. Il software è stato progettato per offrire un'esperienza simile alla versione classica del Blocco Note di Windows, ma con funzionalità estese come la personalizzazione del tema.
 
