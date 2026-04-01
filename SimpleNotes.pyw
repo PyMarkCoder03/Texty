@@ -1026,7 +1026,7 @@ class SimpleNotes:
         Utilizza il browser predefinito del sistema per visualizzare il file 
         HTML locale contenente la guida e le istruzioni per l'utente.
         """
-        browse("file:///C:/Users/PC/OneDrive/Documenti/Le mie app/SimpleNotes/GuidaSimpleNotes/index.html")
+        browse("https://github.com/marcomazzo0103/SimpleNotes.py/blob/main/GuidaUtenteSimpleNotes/index.html")
 
     def open_info_window(self):
         """
