@@ -24,7 +24,7 @@ SimpleNotes offre un set completo di strumenti organizzati in un'interfaccia pul
 * **Personalizzazione tema:** Scegli tra **Tema chiaro** e **Tema scuro** per il massimo comfort visivo.
 * **Aspetto:** Modifica il **Carattere** (font), mostra/nascondi la **Barra di stato** e attiva/disattiva la modalità **A capo automatico**.
 
-### Supporto
+### Supporto (?)
 * **Guida:** Accesso diretto alla documentazione online.
 * **Informazioni:** Dettagli sulla versione, il copyright e l'autore di SimpleNotes.
 
