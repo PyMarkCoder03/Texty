@@ -1052,7 +1052,7 @@ class SimpleNotes:
             pass
         
         # Crea delle Label per mostrare le informazioni
-        icon_img = tk.PhotoImage(file = "icon.png").subsample(14, 14)
+        icon_img = tk.PhotoImage(file = "icon.png").subsample(15, 15)
         label_title = ttk.Label(info_window, text = "SimpleNotes", \
                                 font = ("Arial", 20), image = icon_img, \
                                 compound = tk.LEFT)
