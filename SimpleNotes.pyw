@@ -3,7 +3,7 @@ SimpleNotes è un semplice editor di testo creato
 con il linguaggio Python e la libreria Tkinter.
 
 SimpleNotes
-Versione: 1.0
+Versione: 1.0.0
 Autore: Marco Mazzo
 """
 
@@ -1056,7 +1056,7 @@ class SimpleNotes:
         label_title = ttk.Label(info_window, text = "SimpleNotes", \
                                 font = ("Arial", 20), image = icon_img, \
                                 compound = tk.LEFT)
-        label_version = ttk.Label(info_window, text = "Versione: 1.0", \
+        label_version = ttk.Label(info_window, text = "Versione: 1.0.0", \
                                   font = ("Arial", 10))
         label_copy = ttk.Label(info_window, \
                                text = "© 2024-2026 SimpleNotes. Tutti i diritti riservati.", \
