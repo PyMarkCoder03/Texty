@@ -351,13 +351,13 @@ class SimpleNotes:
         selected_path = filedialog.askopenfilename(
             title = "Apri",
             filetypes = [
-                ("File di testo (*.txt)", "*.txt"),
-                ("File Markdown (*.md)", "*.md"),
-                ("Pagine web HTML (*.html)", "*.html"),
-                ("Fogli di stile CSS (*.css)", "*.css"),
-                ("Script JavaScript (*.js)", "*.js"),
-                ("Script Python (*.py, *.pyw)", "*.py, *.pyw"),
-                ("Tutti i file (*.*)", "*.*")
+                ("File di testo", "*.txt"),
+                ("File Markdown", "*.md"),
+                ("HTML", "*.html, *.htm"),
+                ("CSS", "*.css"),
+                ("Script JavaScript", "*.js"),
+                ("Script Python", "*.py, *.pyw"),
+                ("Tutti i file", "*.*")
             ]
         )
         if selected_path:
@@ -436,13 +436,13 @@ class SimpleNotes:
             initialfile = self.get_filename(),
             defaultextension = ".txt",
             filetypes = [
-                ("File di testo (*.txt)", "*.txt"),
-                ("File Markdown (*.md)", "*.md"),
-                ("Pagina web HTML (*.html)", "*.html"),
-                ("Foglio di stile CSS (*.css)", "*.css"),
-                ("Script JavaScript (*.js)", "*.js"),
-                ("Script Python (*.py)", "*.py"),
-                ("Tutti i file (*.*)", "*.*")
+                ("File di testo", "*.txt"),
+                ("File Markdown", "*.md"),
+                ("HTML", "*.html"),
+                ("CSS", "*.css"),
+                ("Script JavaScript", "*.js"),
+                ("Script Python", "*.py"),
+                ("Tutti i file", "*.*")
             ]
         )
         if selected_path:
