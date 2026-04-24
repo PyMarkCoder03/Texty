@@ -353,10 +353,10 @@ class SimpleNotes:
             filetypes = [
                 ("File di testo", "*.txt"),
                 ("File Markdown", "*.md"),
-                ("HTML", "*.html, *.htm"),
+                ("HTML", "*.html *.htm"),
                 ("CSS", "*.css"),
                 ("Script JavaScript", "*.js"),
-                ("Script Python", "*.py, *.pyw"),
+                ("Script Python", "*.py *.pyw"),
                 ("Tutti i file", "*.*")
             ]
         )
