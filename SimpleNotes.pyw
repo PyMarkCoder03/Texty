@@ -147,7 +147,7 @@ class SimpleNotes:
             words_display = f"{total_words} parole"
             chars_display = f"{total_chars} caratteri"
 
-        self.status_var.set(f"Riga {row}, Colonna {col} | {words_display} ({chars_display})")
+        self.status_var.set(f"Riga {row}, colonna {col} | {words_display} ({chars_display})")
 
     def create_menus(self):
         """
@@ -196,7 +196,7 @@ class SimpleNotes:
         edit_menu.add_command(label = "Elimina", command = self.delete_text, \
                               accelerator = 'CANC')
         edit_menu.add_separator()
-        edit_menu.add_command(label = "Ora/Data", \
+        edit_menu.add_command(label = "Ora e data", \
                               command = self.insert_timestamp, \
                               accelerator = 'F5')
         edit_menu.add_command(label = "Trova...", \
