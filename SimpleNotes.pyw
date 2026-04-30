@@ -365,7 +365,7 @@ class SimpleNotes:
             self.text_area.delete(1.0, tk.END)
             
             try:
-                with open(selected_path, "r", encoding = "utf-8") as file:
+                with open(selected_path, "rb") as file:
                     self.text_area.insert(1.0, file.read())
                     self.text_area.mark_set(tk.INSERT, 1.0)
                     self.text_area.see(1.0)
