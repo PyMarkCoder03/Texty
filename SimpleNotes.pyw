@@ -1052,9 +1052,9 @@ class SimpleNotes:
             pass
         
         # Crea delle Label per mostrare le informazioni
-        icon_img = tk.PhotoImage(file = "icon.png").subsample(12, 12)
+        icon_image = tk.PhotoImage(file = "icon.png").subsample(12, 12)
         label_title = ttk.Label(info_window, text = "SimpleNotes", \
-                                font = ("Arial", 20), image = icon_img, \
+                                font = ("Arial", 20), image = icon_image, \
                                 compound = tk.LEFT)
         label_version = ttk.Label(info_window, text = "Versione 1.0.0", \
                                   font = ("Arial", 10))
@@ -1064,7 +1064,7 @@ class SimpleNotes:
         label_author = ttk.Label(info_window, text = "Autore: Marco Mazzo", \
                                  font = ("Arial", 10))
 
-        label_title.image = icon_img
+        label_title.image = icon_image
         label_title.pack(anchor = tk.W, padx = 40, pady = 20)
         label_version.pack(anchor = tk.W, padx = 40)
         label_copy.pack(anchor = tk.W, padx = 40, pady = 10)
