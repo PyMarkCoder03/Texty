@@ -1,6 +1,6 @@
 """
-SimpleNotes è un semplice editor di testo creato
-con il linguaggio Python e la libreria Tkinter.
+SimpleNotes è un semplice editor di testo
+sviluppato con il linguaggio Python.
 
 SimpleNotes
 Versione 1.0.0
