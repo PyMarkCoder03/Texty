@@ -1,10 +1,10 @@
 """
-SimpleNotes è un semplice editor di testo
-sviluppato con il linguaggio Python.
+Texty è un semplice editor di testo
+sviluppato con il linguaggio Python
 
-SimpleNotes
+Texty
 Versione 1.0.0
-Autore: Marco Mazzo
+Autore: dott. Marco Mazzo
 """
 
 # Importazione delle librerie e dei moduli opportuni
@@ -14,7 +14,7 @@ from tkinter.scrolledtext import ScrolledText
 from datetime import datetime
 from webbrowser import open as browse
 
-class SimpleNotes:
+class Texty:
     """
     Classe principale per la gestione del software.
     
@@ -107,7 +107,7 @@ class SimpleNotes:
         se desidera salvare le modifiche apportate ad un file.
         """
         filename = self.get_filename()
-        box_title = "SimpleNotes"
+        box_title = "Texty"
         box_message = f"Salvare le modifiche apportate a '{filename}'?"
         self.msg = messagebox.askyesnocancel(box_title, box_message)
 
@@ -117,7 +117,7 @@ class SimpleNotes:
         del file ottenuto dal relativo metodo.
         """
         filename = self.get_filename()
-        self.master.title(f"{filename} - SimpleNotes")
+        self.master.title(f"{filename} - Texty")
 
     def update_status_bar(self, event = None):
         """
@@ -234,7 +234,7 @@ class SimpleNotes:
         help_menu = tk.Menu(self.menu_bar, tearoff = 0)
         self.menu_bar.add_cascade(label = "?", menu = help_menu)
         help_menu.add_command(label = "Guida", command = self.open_help_link)
-        help_menu.add_command(label = "Informazioni su SimpleNotes...", \
+        help_menu.add_command(label = "Informazioni su Texty...", \
                               command = self.open_info_window)
 
     def show_context_menu(self, event):
@@ -337,7 +337,7 @@ class SimpleNotes:
         Apre una nuova istanza indipendente dell'applicazione.
         """
         new_window = tk.Toplevel(self.master)
-        app = SimpleNotes(new_window)
+        app = Texty(new_window)
 
     def open_file(self):
         """
@@ -351,8 +351,8 @@ class SimpleNotes:
         selected_path = filedialog.askopenfilename(
             title = "Apri",
             filetypes = [
-                ("File di testo", "*.txt"),
-                ("File Markdown", "*.md"),
+                ("Testo semplice", "*.txt"),
+                ("Markdown", "*.md"),
                 ("HTML", "*.html *.htm"),
                 ("CSS", "*.css"),
                 ("Script JavaScript", "*.js"),
@@ -378,7 +378,7 @@ class SimpleNotes:
             except Exception:
                 filename = self.get_filename()
                 self.new_file()
-                box_title = "SimpleNotes"
+                box_title = "Texty"
                 box_message = (
                     f"Si è verificato un errore durante l'apertura di '{filename}'.\n"
                     "Il file potrebbe essere danneggiato o il formato non supportato."
@@ -436,8 +436,8 @@ class SimpleNotes:
             initialfile = self.get_filename(),
             defaultextension = ".txt",
             filetypes = [
-                ("File di testo", "*.txt"),
-                ("File Markdown", "*.md"),
+                ("Testo semplice", "*.txt"),
+                ("Markdown", "*.md"),
                 ("HTML", "*.html"),
                 ("CSS", "*.css"),
                 ("Script JavaScript", "*.js"),
@@ -571,7 +571,7 @@ class SimpleNotes:
         find_text = self.find_entry.get().strip()
 
         if not find_text:
-            title = "SimpleNotes"
+            title = "Texty"
             message = "Campo vuoto: inserire una parola o una frase da trovare"
             messagebox.showinfo(title, message)
             return
@@ -588,7 +588,7 @@ class SimpleNotes:
                                               tk.END, nocase = True)
 
         if not start_pos:
-            title = "SimpleNotes"
+            title = "Texty"
             message = f"Impossibile trovare \"{find_text}\""
             messagebox.showinfo(title, message)
             return
@@ -612,7 +612,7 @@ class SimpleNotes:
         replace_text = self.replace_entry.get().strip()
 
         if not find_text:
-            title = "SimpleNotes"
+            title = "Texty"
             message = "Campo vuoto: inserire una parola o una frase da trovare"
             messagebox.showinfo(title, message)
             return
@@ -621,7 +621,7 @@ class SimpleNotes:
                                           nocase = True)
 
         if not start_pos:
-            title = "SimpleNotes"
+            title = "Texty"
             message = f"Impossibile trovare \"{find_text}\""
             messagebox.showinfo(title, message)
             return
@@ -646,7 +646,7 @@ class SimpleNotes:
         replace_text = self.replace_entry.get().strip()
 
         if not find_text:
-            title = "SimpleNotes"
+            title = "Texty"
             message = "Campo vuoto: inserire una parola o una frase da trovare"
             messagebox.showinfo(title, message)
             return
@@ -670,12 +670,12 @@ class SimpleNotes:
             counter += 1
 
         if counter == 0:
-            title = "SimpleNotes"
+            title = "Texty"
             message = f"Impossibile trovare \"{find_text}\""
             messagebox.showinfo(title, message)
             return
         else:
-            title = "SimpleNotes"
+            title = "Texty"
             message = f"Sostituite {counter} occorrenze"
             messagebox.showinfo(title, message)
             return
@@ -834,14 +834,14 @@ class SimpleNotes:
         """
         # Controlla la validità della famiglia
         if self.selected_font_family.get() not in self.font_families:
-            title = "SimpleNotes"
+            title = "Texty"
             message = "La famiglia di carattere selezionata non è valida"
             messagebox.showinfo(title, message)
             return
 
         # Controlla la validità dello stile
         if self.selected_font_style.get() not in self.font_styles:
-            title = "SimpleNotes"
+            title = "Texty"
             message = "Lo stile selezionato non è valido"
             messagebox.showinfo(title, message)
             return
@@ -850,14 +850,14 @@ class SimpleNotes:
         try:
             font_size = int(self.selected_font_size.get())
             if font_size < 1 or font_size > 1000:
-                title = "SimpleNotes"
+                title = "Texty"
                 message = "La dimensione deve essere compresa tra 1 e 1000"
                 messagebox.showinfo(title, message)
                 return
 
         # Gestisce l'eccezione tk.TclError con un messaggio
         except tk.TclError:
-            title = "SimpleNotes"
+            title = "Texty"
             message = "La dimensione deve essere un numero"
             messagebox.showinfo(title, message)
             return
@@ -1026,7 +1026,7 @@ class SimpleNotes:
         Utilizza il browser predefinito del sistema per visualizzare il file 
         HTML locale contenente la guida e le istruzioni per l'utente.
         """
-        browse("https://github.com/PyMarkCode03/SimpleNotes.py/blob/main/GuidaUtenteSimpleNotes/index.html")
+        browse("file:///C:/Users/PC/OneDrive/Documenti/Le mie app/Texty/GuidaUtenteTexty/index.html")
 
     def open_info_window(self):
         """
@@ -1041,7 +1041,7 @@ class SimpleNotes:
         info_window = tk.Toplevel(self.master)
         info_window.transient(self.master)
         info_window.grab_set()
-        info_window.title("Informazioni su SimpleNotes")
+        info_window.title("Informazioni su Texty")
         info_window.geometry("450x220")
         info_window.resizable(False, False)
 
@@ -1053,15 +1053,15 @@ class SimpleNotes:
         
         # Crea delle Label per mostrare le informazioni
         icon_image = tk.PhotoImage(file = "icon.png").subsample(12, 12)
-        label_title = ttk.Label(info_window, text = "SimpleNotes", \
+        label_title = ttk.Label(info_window, text = "Texty", \
                                 font = ("Arial", 20), image = icon_image, \
                                 compound = tk.LEFT)
         label_version = ttk.Label(info_window, text = "Versione 1.0.0", \
                                   font = ("Arial", 10))
         label_copy = ttk.Label(info_window, \
-                               text = "© 2024-2026 SimpleNotes. Tutti i diritti riservati.", \
+                               text = "© 2024-2026 Texty. Tutti i diritti riservati.", \
                                font = ("Arial", 10))
-        label_author = ttk.Label(info_window, text = "Autore: Marco Mazzo", \
+        label_author = ttk.Label(info_window, text = "Autore: dott. Marco Mazzo", \
                                  font = ("Arial", 10))
 
         label_title.image = icon_image
@@ -1081,5 +1081,5 @@ class SimpleNotes:
 # Esecuzione dell'applicazione
 if __name__ == "__main__":
     root = tk.Tk()
-    app = SimpleNotes(root)
+    app = Texty(root)
     root.mainloop()
