@@ -1059,7 +1059,7 @@ class Texty:
         label_version = ttk.Label(info_window, text = "Versione 1.0.0", \
                                   font = ("Arial", 10))
         label_copy = ttk.Label(info_window, \
-                               text = "Copyright © 2024-2026 Texty. Tutti i diritti riservati.", \
+                               text = "Copyright © 2024-2026 PyMarkCoder03. Tutti i diritti riservati.", \
                                font = ("Arial", 10))
         label_author = ttk.Label(info_window, text = "Autore: dott. Marco Mazzo", \
                                  font = ("Arial", 10))
