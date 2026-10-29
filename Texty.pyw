@@ -1026,7 +1026,7 @@ class Texty:
         Utilizza il browser predefinito del sistema per visualizzare il file 
         HTML locale contenente la guida e le istruzioni per l'utente.
         """
-        browse("file:///C:/Users/PC/OneDrive/Documenti/Le mie app/Texty/GuidaUtenteTexty/index.html")
+        browse("https://github.com/PyMarkCoder03/Texty/blob/main/GuidaUtenteTexty/index.html")
 
     def open_info_window(self):
         """
