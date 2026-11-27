@@ -35,7 +35,7 @@ class Texty:
         self.update_window_title()
 
         try:
-            self.master.iconbitmap("icon.ico")
+            self.master.iconbitmap("images/icon.ico")
         except tk.TclError:
             pass
 
@@ -696,7 +696,7 @@ class Texty:
 
         # Imposta l'icona della finestra
         try:
-            find_window.iconbitmap("icon.ico")
+            find_window.iconbitmap("images/icon.ico")
         except tk.TclError:
             pass
 
@@ -741,7 +741,7 @@ class Texty:
         replace_window.resizable(False, False)
 
         try:
-            replace_window.iconbitmap("icon.ico")
+            replace_window.iconbitmap("images/icon.ico")
         except tk.TclError:
             pass
 
@@ -898,7 +898,7 @@ class Texty:
 
         # Imposta l'icona della finestra
         try:
-            self.font_window.iconbitmap("icon.ico")
+            self.font_window.iconbitmap("images/icon.ico")
         except tk.TclError:
             pass
 
@@ -1047,12 +1047,12 @@ class Texty:
 
         # Imposta l'icona della finestra
         try:
-            info_window.iconbitmap("icon.ico")
+            info_window.iconbitmap("images/icon.ico")
         except tk.TclError:
             pass
         
         # Crea delle Label per mostrare le informazioni
-        icon_image = tk.PhotoImage(file = "icon.png").subsample(12, 12)
+        icon_image = tk.PhotoImage(file = "images/icon.png").subsample(12, 12)
         label_title = ttk.Label(info_window, text = "Texty", \
                                 font = ("Arial", 20), image = icon_image, \
                                 compound = tk.LEFT)
