@@ -40,6 +40,6 @@ Texty offre un set completo di strumenti organizzati in un'interfaccia pulita:
 
 ## Esempio di schermata dell'interfaccia
 
-* Ecco un esempio di come appare un file di testo aperto con Texty:
+Ecco un esempio di come appare un file di testo aperto con Texty:
 
 ![Screenshot](https://github.com/PyMarkCoder03/Texty/blob/main/images/screenshot.png)
