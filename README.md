@@ -2,7 +2,6 @@
 
 **Texty** è un editor di testo semplice, leggero ed intuitivo sviluppato con il linguaggio **Python** e le librerie **Tkinter**, **Datetime** e **Webbrowser**. Il software è stato progettato per offrire un'esperienza simile alla versione classica del Blocco Note di Windows, ma con alcune funzionalità estese come la personalizzazione del tema.
 
----
 
 ## Funzionalità principali
 
@@ -33,13 +32,11 @@ Texty offre un set completo di strumenti organizzati in un'interfaccia pulita:
 * **Guida:** Accesso diretto alla documentazione online.
 * **Informazioni:** Dettagli sulla versione, il copyright e l'autore di Texty.
 
----
 
 ## Requisiti
 
 * **Python 3.x**
 
----
 
 ## Struttura menu (dettaglio)
 
@@ -49,5 +46,3 @@ Texty offre un set completo di strumenti organizzati in un'interfaccia pulita:
 |**Modifica**|Annulla, Ripeti, Taglia, Copia, Incolla, Elimina, Ora/Data, Trova..., Sostituisci..., Seleziona tutto|
 |**Visualizza**|Tema (Chiaro/Scuro), Carattere..., Barra di stato, A capo automatico|
 |**?**|Guida, Informazioni su Texty...|
-
----
