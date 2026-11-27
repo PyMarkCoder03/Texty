@@ -38,11 +38,6 @@ Texty offre un set completo di strumenti organizzati in un'interfaccia pulita:
 * **Python 3.x**
 
 
-## Struttura menu (dettaglio)
-
-|Menu|Opzioni|
-|-|-|
-|**File**|Nuovo, Nuova finestra, Apri, Salva, Salva con nome..., Esci|
-|**Modifica**|Annulla, Ripeti, Taglia, Copia, Incolla, Elimina, Ora/Data, Trova..., Sostituisci..., Seleziona tutto|
-|**Visualizza**|Tema (Chiaro/Scuro), Carattere..., Barra di stato, A capo automatico|
-|**?**|Guida, Informazioni su Texty...|
+## Esempio di schermata dell'interfaccia
+* Ecco un esempio di come appare un file di testo aperto con Texty:
+!Screenshot interfaccia(https://github.com/PyMarkCoder03/Texty/blob/main/Screenshot%20interfaccia.png)
